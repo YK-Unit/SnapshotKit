@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SnapshotKit'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'UIView/UIWindow/UIScrollView/UITableView/UIWebView/WKWebView Extension to easily take snapshot image of visible or full content.'
 
 # This description is used to generate tags and improve search results.
