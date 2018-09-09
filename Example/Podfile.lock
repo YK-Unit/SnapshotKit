@@ -1,0 +1,23 @@
+PODS:
+  - SnapshotKit (0.1.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - SnapshotKit (from `../`)
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  SnapshotKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapshotKit: e12a921bacca9e20cdb86534ec4598e925287e09
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: d57c8d5a799c1fb90dc83a5912e06927c96b58ef
+
+COCOAPODS: 1.5.3

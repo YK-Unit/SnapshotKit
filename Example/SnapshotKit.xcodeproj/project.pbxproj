@@ -15,6 +15,12 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		98A9EC602144EFDC00911DFE /* ShotImagePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC5E2144EFDC00911DFE /* ShotImagePreviewController.swift */; };
+		98A9EC612144EFDC00911DFE /* ShotImagePreviewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC5F2144EFDC00911DFE /* ShotImagePreviewInterface.swift */; };
+		98A9EC6A214515DC00911DFE /* UIWebViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC69214515DC00911DFE /* UIWebViewTesterViewController.swift */; };
+		98A9EC6C2145190C00911DFE /* WKWebViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC6B2145190C00911DFE /* WKWebViewTesterViewController.swift */; };
+		98A9EC702145209C00911DFE /* UIScrollViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC6F2145209C00911DFE /* UIScrollViewTesterViewController.swift */; };
+		98A9EC722145233900911DFE /* xiao_yao_you.txt in Resources */ = {isa = PBXBuildFile; fileRef = 98A9EC712145233800911DFE /* xiao_yao_you.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +38,7 @@
 		29886F59DF45B5631844B5BF /* Pods-SnapshotKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKit_Tests/Pods-SnapshotKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E71195B87B6FA5C85CE11C2 /* Pods_SnapshotKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		418D5574AB6C46AFBEE117B6 /* Pods-SnapshotKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKit_Example/Pods-SnapshotKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		45E89122C53AE98693D82A87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		45E89122C53AE98693D82A87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SnapshotKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapshotKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,8 +50,14 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		90DCD2A61580E4F4DF81F0D0 /* Pods-SnapshotKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKit_Example/Pods-SnapshotKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EAA3AF35C9529E850C4A5E78 /* SnapshotKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SnapshotKit.podspec; path = ../SnapshotKit.podspec; sourceTree = "<group>"; };
-		ED878553512109E05A0D8B00 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		98A9EC5E2144EFDC00911DFE /* ShotImagePreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotImagePreviewController.swift; sourceTree = "<group>"; };
+		98A9EC5F2144EFDC00911DFE /* ShotImagePreviewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotImagePreviewInterface.swift; sourceTree = "<group>"; };
+		98A9EC69214515DC00911DFE /* UIWebViewTesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewTesterViewController.swift; sourceTree = "<group>"; };
+		98A9EC6B2145190C00911DFE /* WKWebViewTesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewTesterViewController.swift; sourceTree = "<group>"; };
+		98A9EC6F2145209C00911DFE /* UIScrollViewTesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewTesterViewController.swift; sourceTree = "<group>"; };
+		98A9EC712145233800911DFE /* xiao_yao_you.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = xiao_yao_you.txt; sourceTree = "<group>"; };
+		EAA3AF35C9529E850C4A5E78 /* SnapshotKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SnapshotKit.podspec; path = ../SnapshotKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ED878553512109E05A0D8B00 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F198BB0A4FC6F40EFBD562A3 /* Pods_SnapshotKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +105,9 @@
 		607FACD21AFB9204008FA782 /* Example for SnapshotKit */ = {
 			isa = PBXGroup;
 			children = (
+				98A9EC5D2144EFDC00911DFE /* ShotImagePreview */,
+				98A9EC732145234700911DFE /* ScrollViewTester */,
+				98A9EC68214515A700911DFE /* WebViewTester */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -137,6 +152,33 @@
 				45E89122C53AE98693D82A87 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		98A9EC5D2144EFDC00911DFE /* ShotImagePreview */ = {
+			isa = PBXGroup;
+			children = (
+				98A9EC5F2144EFDC00911DFE /* ShotImagePreviewInterface.swift */,
+				98A9EC5E2144EFDC00911DFE /* ShotImagePreviewController.swift */,
+			);
+			path = ShotImagePreview;
+			sourceTree = "<group>";
+		};
+		98A9EC68214515A700911DFE /* WebViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				98A9EC69214515DC00911DFE /* UIWebViewTesterViewController.swift */,
+				98A9EC6B2145190C00911DFE /* WKWebViewTesterViewController.swift */,
+			);
+			path = WebViewTester;
+			sourceTree = "<group>";
+		};
+		98A9EC732145234700911DFE /* ScrollViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				98A9EC6F2145209C00911DFE /* UIScrollViewTesterViewController.swift */,
+				98A9EC712145233800911DFE /* xiao_yao_you.txt */,
+			);
+			path = ScrollViewTester;
 			sourceTree = "<group>";
 		};
 		C49260449342319715EF95A3 /* Frameworks */ = {
@@ -248,6 +290,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				98A9EC722145233900911DFE /* xiao_yao_you.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +311,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotKit_Example/Pods-SnapshotKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapshotKit/SnapshotKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +368,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				98A9EC6C2145190C00911DFE /* WKWebViewTesterViewController.swift in Sources */,
+				98A9EC602144EFDC00911DFE /* ShotImagePreviewController.swift in Sources */,
+				98A9EC6A214515DC00911DFE /* UIWebViewTesterViewController.swift in Sources */,
+				98A9EC612144EFDC00911DFE /* ShotImagePreviewInterface.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				98A9EC702145209C00911DFE /* UIScrollViewTesterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -456,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -470,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SnapshotKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -485,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SnapshotKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
