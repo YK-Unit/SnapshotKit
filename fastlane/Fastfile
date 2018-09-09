@@ -37,7 +37,7 @@ platform :ios do
       changelog = changelog_from_git_commits
 
       Action.sh("git add -A")
-      Actions.sh("git commit -am \"Bumped to version #{target_version}\"")
+      Actions.sh("git commit -m \"Bumped to version #{target_version}\"")
 
       Actions.sh("git tag -a #{target_version} -m ''")
 
