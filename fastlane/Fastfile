@@ -43,9 +43,9 @@ platform :ios do
 
       push_to_git_remote
 
+      # 不传递repo字段时，默认pod push到cocoapods官方主干
       pod_push(
-        allow_warnings: true,
-        repo: "master"
+        allow_warnings: true
       )
   end
 
