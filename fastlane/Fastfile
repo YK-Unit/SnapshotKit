@@ -9,7 +9,7 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test_all_schemes do
-    scan(workspace: "Example/SnapshotKit.xcworkspace", scheme: "SnapshotKit_Example", clean: true)
+    scan(workspace: "Example/SnapshotKit.xcworkspace", scheme: "SnapshotKit-Example", clean: true)
   end
   
   desc "Lint"
