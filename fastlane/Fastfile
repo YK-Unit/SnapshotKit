@@ -1,0 +1,59 @@
+fastlane_version "2.58.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+
+  end
+
+  desc "Runs all the tests"
+  lane :test_all_schemes do
+    scan(project: "Example/SnapshotKit.xcodeproj", scheme: "SnapshotKit_Example", clean: true)
+  end
+  
+  desc "Lint"
+  lane :lint do
+      pod_lib_lint(
+          allow_warnings: true,
+          sources: ["https://github.com/CocoaPods/Specs.git"]
+      )
+  end
+
+  desc "Release new version"
+  lane :release do |options|
+      target_version = options[:version]
+      raise "The version is missed. Use `fastlane release version:{version_number}`.`" if target_version.nil?
+
+      ensure_git_branch
+      ensure_git_status_clean
+      
+      test_all_schemes
+      lint
+      
+      increment_version_number(version_number: target_version)
+      version_bump_podspec(path: "SnapshotKit.podspec", version_number: target_version)
+
+      changelog = changelog_from_git_commits
+
+      Action.sh("git add -A")
+      Actions.sh("git commit -am \"Bumped to version #{target_version}\"")
+
+      Actions.sh("git tag -a #{target_version} -m ''")
+
+      push_to_git_remote
+
+      pod_push(
+        allow_warnings: true,
+        repo: "master"
+      )
+  end
+
+  after_all do |lane|
+
+  end
+
+  error do |lane, exception|
+
+  end
+end
