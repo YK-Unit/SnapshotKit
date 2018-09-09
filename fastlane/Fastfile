@@ -45,7 +45,8 @@ platform :ios do
 
       # 不传递repo字段时，默认pod push到cocoapods官方主干
       pod_push(
-        allow_warnings: true
+        allow_warnings: true,
+        path: "SnapshotKit.podspec"
       )
   end
 
