@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                        UIView/UIWindow/UIScrollView/UITableView/UIWebView/WKWebView Extension to easily take snapshot image of visible or full content.
+                        A Kit that can make UIView/UIWindow/UIScrollView/UITableView/UIWebView/WKWebView to easily take snapshot image of visible or full content.
                        DESC
 
   s.homepage         = 'https://github.com/YK-Unit/SnapshotKit'
