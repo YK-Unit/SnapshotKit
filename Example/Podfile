@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SnapshotKit_Example' do
+  pod 'SnapshotKit', :path => '../'
+
+  target 'SnapshotKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
