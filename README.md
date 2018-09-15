@@ -8,7 +8,88 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+### UIView Example
+```swift
+func uiView_takeSnapshotOfVisibleContent() {
+    let image = self.view.takeSnapshotOfVisibleContent()
+    // edit image 
+}
+
+func uiView_sync_takeSnapshotOfFullContent() {
+	let image = self.view.takeSnapshotOfFullContent()
+	// edit image 
+}
+
+func uiView_async_takeSnapshotOfFullContent() {
+	self.view.takeScreenshotOfFullContent { (image) in
+	    // edit image 
+	}
+}
+```
+
+### UIScrollView Example
+```swift
+private func takeSnapshotOfVisibleContent() {
+    let image = self.scrollView.takeSnapshotOfVisibleContent()
+    // edit image
+}
+
+private func sync_takeSnapshotOfFullContent() {
+    let image = self.scrollView.takeSnapshotOfFullContent()
+    // edit image
+}
+
+private func async_takeSnapshotOfFullContent() {
+    self.scrollView.takeScreenshotOfFullContent { (image) in
+        // edit image
+    }
+}
+```
+
+### UITableView Example
+```swift
+func uiTableView_takeSnapshotOfVisibleContent() {
+    let image = self.tableView.takeSnapshotOfVisibleContent()
+    // edit image
+}
+
+func uiTableView_sync_takeSnapshotOfFullContent() {
+    let image = self.tableView.takeSnapshotOfFullContent()
+    // edit image
+}
+
+func uiTableView_async_takeSnapshotOfFullContent() {
+    self.tableView.takeScreenshotOfFullContent { (image) in
+        // edit image
+    }
+}
+```
+
+### UIWebView/WKWebView Example
+```swift
+private func takeSnapshotOfVisibleContent() {
+    let image = self.webView.takeSnapshotOfVisibleContent()
+    // edit image
+}
+
+private func sync_takeSnapshotOfFullContent() {
+    let image = self.webView.takeSnapshotOfFullContent()
+    // edit image
+}
+
+private func async_takeSnapshotOfFullContent_bySpliter() {
+    self.webView.scrollView.takeScreenshotOfFullContent { (image) in
+		// edit image
+    }
+}
+
+private func async_takeSnapshotOfFullContent_byPrinter() {
+    self.webView.takeScreenshotOfFullContent { (image) in
+        // edit image
+    }
+}
+```
+
 
 ## Installation
 
