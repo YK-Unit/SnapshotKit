@@ -68,20 +68,27 @@ extension UIScrollView {
         context.setFillColor(backgroundColor.cgColor)
         context.setStrokeColor(backgroundColor.cgColor)
 
-        for index in 0...pageNum {
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
-                if index < pageNum {
-                    self.contentOffset = CGPoint.init(x: 0, y: self.bounds.height *  CGFloat(index))
-                    let pageFrame = CGRect(x: 0, y: self.frame.size.height *  CGFloat(index), width: self.bounds.size.width, height: self.bounds.size.height)
-                    self.drawHierarchy(in: pageFrame, afterScreenUpdates: true)
-                } else {
-                    let image = UIGraphicsGetImageFromCurrentImageContext()
-                    UIGraphicsEndImageContext()
-                    self.contentOffset = originalOffset
-                    completion(image)
-                }
-            }
+        self.drawScreenshotOfPageContent(0, maxIndex: pageNum) {
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            self.contentOffset = originalOffset
+            completion(image)
         }
     }
 
+    fileprivate func drawScreenshotOfPageContent(_ index: Int, maxIndex: Int, completion: @escaping () -> Void) {
+
+        self.setContentOffset(CGPoint(x: 0, y: CGFloat(index) * self.frame.size.height), animated: false)
+        let pageFrame = CGRect(x: 0, y: CGFloat(index) * self.frame.size.height, width: self.bounds.size.width, height: self.bounds.size.height)
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+            self.drawHierarchy(in: pageFrame, afterScreenUpdates: true)
+
+            if index < maxIndex {
+                self.drawScreenshotOfPageContent(index + 1, maxIndex: maxIndex, completion: completion)
+            }else{
+                completion()
+            }
+        }
+    }
 }
