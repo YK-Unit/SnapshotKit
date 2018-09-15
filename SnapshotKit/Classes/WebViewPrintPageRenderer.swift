@@ -34,7 +34,7 @@ internal final class WebViewPrintPageRenderer: UIPrintPageRenderer {
         return CGRect.init(origin: .zero, size: contentSize)
     }
 
-    private func createPDFPage() -> CGPDFPage? {
+    private func printContentToPDFPage() -> CGPDFPage? {
         let data = NSMutableData()
         UIGraphicsBeginPDFContextToData(data, self.paperRect, nil)
         self.prepare(forDrawingPages: NSMakeRange(0, 1))
@@ -86,8 +86,8 @@ internal final class WebViewPrintPageRenderer: UIPrintPageRenderer {
     ///
     /// - Important: if the size of content is very large, then the size of image will be also very large
     /// - Returns: UIImage?
-    internal func printContentIntoImage() -> UIImage? {
-        guard let pdfPage = self.createPDFPage() else {
+    internal func printContentToImage() -> UIImage? {
+        guard let pdfPage = self.printContentToPDFPage() else {
             return nil
         }
 

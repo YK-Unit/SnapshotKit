@@ -22,7 +22,7 @@ extension UIWebView {
     public func takeScreenshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
             let renderer = WebViewPrintPageRenderer.init(formatter: self.viewPrintFormatter(), contentSize: self.scrollView.contentSize)
-            let image = renderer.printContentIntoImage()
+            let image = renderer.printContentToImage()
             completion(image)
         }
     }
