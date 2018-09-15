@@ -16,14 +16,14 @@ func uiView_takeSnapshotOfVisibleContent() {
 }
 
 func uiView_sync_takeSnapshotOfFullContent() {
-	let image = self.view.takeSnapshotOfFullContent()
-	// edit image 
+    let image = self.view.takeSnapshotOfFullContent()
+    // edit image 
 }
 
 func uiView_async_takeSnapshotOfFullContent() {
-	self.view.takeScreenshotOfFullContent { (image) in
-	    // edit image 
-	}
+    self.view.takeScreenshotOfFullContent { (image) in
+      // edit image 
+    }
 }
 ```
 
@@ -60,7 +60,7 @@ func uiTableView_sync_takeSnapshotOfFullContent() {
 
 func uiTableView_async_takeSnapshotOfFullContent() {
     self.tableView.takeScreenshotOfFullContent { (image) in
-        // edit image
+      // edit image
     }
 }
 ```
@@ -79,13 +79,13 @@ private func sync_takeSnapshotOfFullContent() {
 
 private func async_takeSnapshotOfFullContent_bySpliter() {
     self.webView.scrollView.takeScreenshotOfFullContent { (image) in
-		// edit image
+      // edit image
     }
 }
 
 private func async_takeSnapshotOfFullContent_byPrinter() {
     self.webView.takeScreenshotOfFullContent { (image) in
-        // edit image
+      // edit image
     }
 }
 ```
