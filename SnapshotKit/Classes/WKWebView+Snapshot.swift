@@ -31,7 +31,7 @@ extension WKWebView {
     override
     public func takeScreenshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
         self.scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
             let image = self.takeSnapshotOfFullContent()
             completion(image)
         }
