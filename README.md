@@ -41,7 +41,7 @@ private func sync_takeSnapshotOfFullContent() {
 
 private func async_takeSnapshotOfFullContent() {
     self.scrollView.takeScreenshotOfFullContent { (image) in
-        // edit image
+      // edit image
     }
 }
 ```
