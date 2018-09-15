@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/SnapshotKit.svg?style=flat)](https://cocoapods.org/pods/SnapshotKit)
 [![Platform](https://img.shields.io/cocoapods/p/SnapshotKit.svg?style=flat)](https://cocoapods.org/pods/SnapshotKit)
 
+A Kit that can make UIView/UIWindow/UIScrollView/UITableView/UIWebView/WKWebView to easily take snapshot image of visible or full content.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
