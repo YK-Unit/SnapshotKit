@@ -30,10 +30,33 @@ extension WKWebView {
 
     override
     public func takeScreenshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
-        self.scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
-            let image = self.takeSnapshotOfFullContent()
-            completion(image)
+        let originalOffset = self.scrollView.contentOffset
+
+        // 当contentSize.height<bounds.height时，保证至少有1页的内容绘制
+        var pageNum = 1
+        if self.scrollView.contentSize.height > self.scrollView.bounds.height {
+            pageNum = Int(floorf(Float(self.scrollView.contentSize.height / self.scrollView.bounds.height)))
+        }
+
+        self.loadPageContent(0, maxIndex: pageNum, completion: {
+            self.scrollView.contentOffset = CGPoint.zero
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                let renderer = WebViewPrintPageRenderer.init(formatter: self.viewPrintFormatter(), contentSize: self.scrollView.contentSize)
+                let image = renderer.printContentToImage()
+                self.scrollView.contentOffset = originalOffset
+                completion(image)
+            }
+        })
+    }
+
+    fileprivate func loadPageContent(_ index: Int, maxIndex: Int, completion: @escaping () -> Void) {
+        self.scrollView.setContentOffset(CGPoint(x: 0, y: CGFloat(index) * self.scrollView.frame.size.height), animated: false)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            if index < maxIndex {
+                self.loadPageContent(index + 1, maxIndex: maxIndex, completion: completion)
+            }else{
+                completion()
+            }
         }
     }
 }
