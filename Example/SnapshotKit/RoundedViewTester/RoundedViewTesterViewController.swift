@@ -30,7 +30,7 @@ class RoundedViewTesterViewController: UIViewController {
     }
 
     private func initView() {
-        self.title = "UIWebView 测试"
+        self.title = "RoundedView 测试"
 
         self.view.backgroundColor = UIColor.white
 

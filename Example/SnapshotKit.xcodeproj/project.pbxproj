@@ -107,7 +107,7 @@
 		607FACD21AFB9204008FA782 /* Example for SnapshotKit */ = {
 			isa = PBXGroup;
 			children = (
-				98821BD521843A2A003F2999 /* UIViewTester */,
+				98821BD521843A2A003F2999 /* RoundedViewTester */,
 				98A9EC5D2144EFDC00911DFE /* ShotImagePreview */,
 				98A9EC732145234700911DFE /* ScrollViewTester */,
 				98A9EC68214515A700911DFE /* WebViewTester */,
@@ -157,12 +157,12 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		98821BD521843A2A003F2999 /* UIViewTester */ = {
+		98821BD521843A2A003F2999 /* RoundedViewTester */ = {
 			isa = PBXGroup;
 			children = (
 				98821BD621843A52003F2999 /* RoundedViewTesterViewController.swift */,
 			);
-			path = UIViewTester;
+			path = RoundedViewTester;
 			sourceTree = "<group>";
 		};
 		98A9EC5D2144EFDC00911DFE /* ShotImagePreview */ = {
