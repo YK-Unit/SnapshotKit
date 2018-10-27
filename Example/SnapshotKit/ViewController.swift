@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     typealias ConfigData = (sectionName: String, cellNames: [String])
 
     private let configDatas: [ConfigData] = [
-        (sectionName: "UIView", cellNames: ["截图可视区域", "同步截图全部区域", "异步截图全部区域"]),
+        (sectionName: "UIView", cellNames: ["截图可视区域", "同步截图全部区域", "异步截图全部区域", "RoundedView截图测试入口"]),
         (sectionName: "UIWindows", cellNames: ["截图可视区域", "同步截图全部区域", "异步截图全部区域"]),
         (sectionName: "UIScrollView", cellNames: ["截图测试入口"]),
         (sectionName: "UITableView", cellNames: ["截图可视区域", "同步截图全部区域", "异步截图全部区域"]),
@@ -61,6 +61,9 @@ extension ViewController {
             self.uiView_sync_takeSnapshotOfFullContent()
         case 2:
             self.uiView_async_takeSnapshotOfFullContent()
+        case 3:
+            let vc = RoundedViewTesterViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

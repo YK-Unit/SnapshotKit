@@ -1,5 +1,5 @@
 //
-//  UIViewTesterViewController.swift
+//  RoundedViewTesterViewController.swift
 //  SnapshotKit_Example
 //
 //  Created by York on 2018/10/27.
@@ -8,7 +8,9 @@
 
 import UIKit
 import SnapshotKit
+import SVProgressHUD
 
+/// 圆角视图测试
 class RoundedViewTesterViewController: UIViewController {
 
     private let tableView = UITableView()
@@ -51,7 +53,7 @@ class RoundedViewTesterViewController: UIViewController {
         roundedView.layer.cornerRadius = 30
         roundedView.layer.borderWidth = 1.0
         roundedView.layer.borderColor = UIColor.red.cgColor
-//        roundedView.layer.masksToBounds = true
+        roundedView.layer.masksToBounds = true
     }
 
     private func takeSnapshotOfVisibleContent() {
@@ -65,7 +67,11 @@ class RoundedViewTesterViewController: UIViewController {
     }
 
     private func async_takeSnapshotOfFullContent() {
-
+        SVProgressHUD.show()
+        self.roundedView.takeScreenshotOfFullContent { (image) in
+            SVProgressHUD.dismiss()
+            ShotImagePreviewInterface.previewShotImage(image)
+        }
     }
 
 }
