@@ -81,7 +81,7 @@ extension ViewController {
 
     func uiView_async_takeSnapshotOfFullContent() {
         SVProgressHUD.show()
-        self.view.takeScreenshotOfFullContent { (image) in
+        self.view.asyncTakeSnapshotOfFullContent { (image) in
             SVProgressHUD.dismiss()
             ShotImagePreviewInterface.previewShotImage(image)
         }
@@ -128,7 +128,7 @@ extension ViewController {
         }
 
         SVProgressHUD.show()
-        curWindow.takeScreenshotOfFullContent { (image) in
+        curWindow.asyncTakeSnapshotOfFullContent { (image) in
             SVProgressHUD.dismiss()
             ShotImagePreviewInterface.previewShotImage(image)
         }
@@ -166,7 +166,7 @@ extension ViewController {
 
     func uiTableView_async_takeSnapshotOfFullContent() {
         SVProgressHUD.show()
-        self.tableView.takeScreenshotOfFullContent { (image) in
+        self.tableView.asyncTakeSnapshotOfFullContent { (image) in
             SVProgressHUD.dismiss()
             ShotImagePreviewInterface.previewShotImage(image)
         }

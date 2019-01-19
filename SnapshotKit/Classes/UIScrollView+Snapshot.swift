@@ -47,7 +47,7 @@ extension UIScrollView {
     }
 
     override
-    public func takeScreenshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
+    public func asyncTakeSnapshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
         // 分页绘制内容到ImageContext
         let originalOffset = self.contentOffset
 

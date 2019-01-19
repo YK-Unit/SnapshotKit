@@ -87,7 +87,7 @@ class UIScrollViewTesterViewController: UIViewController {
 
     private func async_takeSnapshotOfFullContent() {
         SVProgressHUD.show()
-        self.scrollView.takeScreenshotOfFullContent { (image) in
+        self.scrollView.asyncTakeSnapshotOfFullContent { (image) in
             SVProgressHUD.dismiss()
             ShotImagePreviewInterface.previewShotImage(image)
         }

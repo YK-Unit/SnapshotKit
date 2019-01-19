@@ -36,7 +36,7 @@ extension UIWindow {
     }
 
     override
-    public func takeScreenshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
+    public func asyncTakeSnapshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
             let image = self.takeSnapshotOfFullContent()
             completion(image)

@@ -68,7 +68,7 @@ class RoundedViewTesterViewController: UIViewController {
 
     private func async_takeSnapshotOfFullContent() {
         SVProgressHUD.show()
-        self.roundedView.takeScreenshotOfFullContent { (image) in
+        self.roundedView.asyncTakeSnapshotOfFullContent { (image) in
             SVProgressHUD.dismiss()
             ShotImagePreviewInterface.previewShotImage(image)
         }

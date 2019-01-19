@@ -71,7 +71,7 @@ class WKWebViewTesterViewController: UIViewController {
 
     private func async_takeSnapshotOfFullContent_bySpliter() {
         SVProgressHUD.show()
-        self.webView.scrollView.takeScreenshotOfFullContent { (image) in
+        self.webView.scrollView.asyncTakeSnapshotOfFullContent { (image) in
             SVProgressHUD.dismiss()
             ShotImagePreviewInterface.previewShotImage(image)
         }
@@ -79,7 +79,7 @@ class WKWebViewTesterViewController: UIViewController {
 
     private func async_takeSnapshotOfFullContent_byPrinter() {
         SVProgressHUD.show()
-        self.webView.takeScreenshotOfFullContent { (image) in
+        self.webView.asyncTakeSnapshotOfFullContent { (image) in
             SVProgressHUD.dismiss()
             ShotImagePreviewInterface.previewShotImage(image)
         }

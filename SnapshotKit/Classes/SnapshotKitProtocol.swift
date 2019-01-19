@@ -25,5 +25,5 @@ public protocol SnapshotKitProtocol {
     ///
     /// - Important: when the size of the view's full content is large, use this method to take snapshot
     /// - Parameter completion: <#completion description#>
-    func takeScreenshotOfFullContent(_ completion: @escaping ((_ image: UIImage?) -> Void))
+    func asyncTakeSnapshotOfFullContent(_ completion: @escaping ((_ image: UIImage?) -> Void))
 }

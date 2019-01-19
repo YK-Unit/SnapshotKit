@@ -19,7 +19,7 @@ extension UIWebView {
     }
 
     override
-    public func takeScreenshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
+    public func asyncTakeSnapshotOfFullContent(_ completion: @escaping ((UIImage?) -> Void)) {
         let originalOffset = self.scrollView.contentOffset
 
         // 当contentSize.height<bounds.height时，保证至少有1页的内容绘制
