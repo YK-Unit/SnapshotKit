@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         (sectionName: "UIWindows", cellNames: ["截图可视区域", "同步截图全部区域", "异步截图全部区域"]),
         (sectionName: "UIScrollView", cellNames: ["截图测试入口"]),
         (sectionName: "UITableView", cellNames: ["截图可视区域", "同步截图全部区域", "异步截图全部区域"]),
-        (sectionName: "UIWebView", cellNames: ["截图测试入口"]),
         (sectionName: "WKWebView", cellNames: ["截图测试入口"])
     ]
 
@@ -172,12 +171,6 @@ extension ViewController {
         }
     }
 
-    // MARK: UIWebView 测试方法
-    func handleUIWebViewTestCase(at row: Int) {
-        let vc = UIWebViewTesterViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-
     // MARK: WKWebView 测试方法
     func handleWKWebViewTestCase(at row: Int) {
         let vc = WKWebViewTesterViewController()
@@ -239,8 +232,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         case 3:
             self.handleUITableViewTestCase(at: row)
         case 4:
-            self.handleUIWebViewTestCase(at: row)
-        case 5:
             self.handleWKWebViewTestCase(at: row)
         default:
             break

@@ -67,7 +67,7 @@ func uiTableView_async_takeSnapshotOfFullContent() {
 }
 ```
 
-### UIWebView/WKWebView Example
+### WKWebView Example
 ```swift
 private func takeSnapshotOfVisibleContent() {
     let image = self.webView.takeSnapshotOfVisibleContent()

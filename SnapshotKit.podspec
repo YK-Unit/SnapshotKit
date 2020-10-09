@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SnapshotKit'
-  s.version          = '0.2.0'
-  s.summary          = 'UIView/UIWindow/UIScrollView/UITableView/UIWebView/WKWebView Extension to easily take snapshot image of visible or full content.'
+  s.version          = '0.3.0'
+  s.summary          = 'UIView/UIWindow/UIScrollView/UITableView/WKWebView Extension to easily take snapshot image of visible or full content.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                        A Kit that can make UIView/UIWindow/UIScrollView/UITableView/UIWebView/WKWebView to easily take snapshot image of visible or full content.
+                        A Kit that can make UIView/UIWindow/UIScrollView/UITableView/WKWebView to easily take snapshot image of visible or full content.
                        DESC
 
   s.homepage         = 'https://github.com/YK-Unit/SnapshotKit'

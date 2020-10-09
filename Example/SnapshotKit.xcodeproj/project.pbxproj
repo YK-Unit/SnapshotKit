@@ -18,7 +18,6 @@
 		98821BD721843A52003F2999 /* RoundedViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98821BD621843A52003F2999 /* RoundedViewTesterViewController.swift */; };
 		98A9EC602144EFDC00911DFE /* ShotImagePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC5E2144EFDC00911DFE /* ShotImagePreviewController.swift */; };
 		98A9EC612144EFDC00911DFE /* ShotImagePreviewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC5F2144EFDC00911DFE /* ShotImagePreviewInterface.swift */; };
-		98A9EC6A214515DC00911DFE /* UIWebViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC69214515DC00911DFE /* UIWebViewTesterViewController.swift */; };
 		98A9EC6C2145190C00911DFE /* WKWebViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC6B2145190C00911DFE /* WKWebViewTesterViewController.swift */; };
 		98A9EC702145209C00911DFE /* UIScrollViewTesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A9EC6F2145209C00911DFE /* UIScrollViewTesterViewController.swift */; };
 		98A9EC722145233900911DFE /* xiao_yao_you.txt in Resources */ = {isa = PBXBuildFile; fileRef = 98A9EC712145233800911DFE /* xiao_yao_you.txt */; };
@@ -54,7 +53,6 @@
 		98821BD621843A52003F2999 /* RoundedViewTesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViewTesterViewController.swift; sourceTree = "<group>"; };
 		98A9EC5E2144EFDC00911DFE /* ShotImagePreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotImagePreviewController.swift; sourceTree = "<group>"; };
 		98A9EC5F2144EFDC00911DFE /* ShotImagePreviewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotImagePreviewInterface.swift; sourceTree = "<group>"; };
-		98A9EC69214515DC00911DFE /* UIWebViewTesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewTesterViewController.swift; sourceTree = "<group>"; };
 		98A9EC6B2145190C00911DFE /* WKWebViewTesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewTesterViewController.swift; sourceTree = "<group>"; };
 		98A9EC6F2145209C00911DFE /* UIScrollViewTesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewTesterViewController.swift; sourceTree = "<group>"; };
 		98A9EC712145233800911DFE /* xiao_yao_you.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = xiao_yao_you.txt; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 		98A9EC68214515A700911DFE /* WebViewTester */ = {
 			isa = PBXGroup;
 			children = (
-				98A9EC69214515DC00911DFE /* UIWebViewTesterViewController.swift */,
 				98A9EC6B2145190C00911DFE /* WKWebViewTesterViewController.swift */,
 			);
 			path = WebViewTester;
@@ -281,6 +278,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -323,7 +321,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotKit_Example/Pods-SnapshotKit_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SnapshotKit_Example/Pods-SnapshotKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapshotKit/SnapshotKit.framework",
 			);
@@ -334,7 +332,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotKit_Example/Pods-SnapshotKit_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapshotKit_Example/Pods-SnapshotKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8F2C69CC9711F6C6914B593E /* [CP] Check Pods Manifest.lock */ = {
@@ -383,7 +381,6 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				98A9EC6C2145190C00911DFE /* WKWebViewTesterViewController.swift in Sources */,
 				98A9EC602144EFDC00911DFE /* ShotImagePreviewController.swift in Sources */,
-				98A9EC6A214515DC00911DFE /* UIWebViewTesterViewController.swift in Sources */,
 				98821BD721843A52003F2999 /* RoundedViewTesterViewController.swift in Sources */,
 				98A9EC612144EFDC00911DFE /* ShotImagePreviewInterface.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
