@@ -50,3 +50,5 @@ fastlane/test_output
 fastlane/.env
 fastlane/README.md
 
+# Swift Package Manager
+.swiftpm/
