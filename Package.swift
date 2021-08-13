@@ -24,7 +24,6 @@ let package = Package(
         .target(
             name: "SnapshotKit",
             dependencies: [],
-            path: "SnapshotKit",
-            exclude: ["SnapshotKit.podspec", "fastlane", "Example"]),
+            path: "SnapshotKit"),
     ]
 )
